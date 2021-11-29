@@ -1,1 +1,144 @@
-@import url("./null.css");
+@import "./null.css";
+.banner {
+  background-color: #fed100;
+}
+.container {
+  /*
+		max-width а не width для будующего адаптива
+	*/
+  max-width: 1200px;
+  margin: 0 auto;
+  /*
+		выравнивание по горизонтали
+		margin: 0 auto;
+	*/
+}
+.header {
+  display: flex;
+  height: 64px;
+  margin: 0 0 50px 0;
+  /*
+		margin - внешний блока
+		margin: 0 0 50px 0;
+		margin: сверху справа снизу слева
+		margin: 0 auto;
+		margin: сверху/снизу справа/слева
+		margin: 50px;
+		margin: сверху/снизу/справа/слева
+	*/
+  justify-content: space-between;
+  align-items: center;
+  /*
+		justify-content - позиционорование элементов по гаризонтали внутри родителя
+		space-between,
+		center,
+		flex-start - по умолчанию,
+		flex-end
+
+		align-items позиционорование элементов по вертикали внутри родителя
+		center
+		flex-start - по умолчанию,
+		flex-end
+	*/
+}
+.menu {
+  display: flex;
+  gap: 32px;
+  /*
+		gap - расстояние между флекс элементами
+	*/
+}
+.logo {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #333333;
+  /*
+		font-weight - жирность текста
+		font-size - размер шрифта
+		line-height - межстрочны интервал
+		color - цвет текста
+		text-decoration: underline; - добавляет строку под текстом
+	*/
+}
+.phone {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+  text-decoration: underline;
+}
+.content {
+  display: flex;
+}
+.column {
+  flex: 0 1 50%;
+  /*
+		flex: 0 1 50%;
+		0/1 - разрешает или не разрешает элементу увеличиваться
+		0/1 -  азрешает или не разрешает элементу уменьшаться
+		50% - размер блока(ширина)
+	*/
+}
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 105.4%;
+  color: #333333;
+  margin: 0 0 28px 0;
+}
+.subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #333333;
+  margin: 0 0 50px 0;
+}
+.button {
+  display: inline-block;
+  background-color: #ff352b;
+  /*
+	  display: block; - 100% ширины родителя
+		display: inline; - занимает ширину контена внутри
+		display: inline-block;
+	*/
+  color: #f2f2f2;
+  padding: 16px 50px;
+  margin: 0 0 50px 0;
+  /*
+	  второй вариант - задание ширины и высоты и центрирование элемента по центру 
+		width: 220px;
+  	height: 60px;
+ 	 	display: flex;
+  	justify-content: center;
+  	align-items: center;
+	*/
+  cursor: pointer;
+}
+.pluses {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.plus {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.image {
+  /*
+	  поднимем картинку вверх отрицательным отступом
+	*/
+  margin: -120px 0 0 0;
+}
+
+.test {
+  background-color: blueviolet;
+  font-size: 18px;
+  margin: 100px auto 200px auto;
+  width: 500px;
+  padding: 16px 50px;
+}
